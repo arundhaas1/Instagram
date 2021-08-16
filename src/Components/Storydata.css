@@ -1,0 +1,8 @@
+.storydata > img{
+    height: 60px;
+    width: 60px;
+    /* object-fit: contain; */
+    border-radius: 50%;
+    padding: 3px;
+    border: 2px solid #FFDC80;
+}

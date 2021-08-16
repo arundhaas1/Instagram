@@ -1,0 +1,76 @@
+.feed{
+    margin-top: 10px;
+}
+
+.feedheader{
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.verticon{
+    margin-left: auto;
+    padding-right: 10px;
+}
+
+.feedheader > img{
+    height: 33px;
+    width: 33px;
+    border-radius: 50%;
+}
+
+.feedheader >p{
+    font-weight: 600;
+    margin-left: 7px;
+    color: black;
+}
+.feedpost{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.feedpost >img{
+    width: 100vw;
+    height: auto;
+    object-fit: cover;
+}
+
+.feedfooter{
+    margin-left: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.feedicon{
+    height: 25px;
+    margin-right: 12px;
+    margin-top: 5px;
+}
+
+.likes{
+    margin-left: 15px;
+}
+
+.likes >p{
+    font-weight: 800;
+    font-size: 14px;
+    color: gray;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.comment{
+    display: flex;
+}
+
+.comment>h5{
+    font-size: 15px;
+    color: black;
+}
+
+.comment>p{
+    font-size: 15px;
+    color: black;
+    margin-left: 5px;
+}

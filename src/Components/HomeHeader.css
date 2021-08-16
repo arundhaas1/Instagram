@@ -1,0 +1,29 @@
+.homeheader{
+    display: flex;
+    padding-top: 13px;
+    padding-left: 10px;
+    align-items: center;
+    background-color: #fff;
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+}
+
+.homeheaderleft{
+    /* margin-top: 4px; */
+}
+
+.homeheaderright{
+    display: flex;
+    /* justify-content: flex-end; */
+    margin-left: auto;
+
+}
+
+.icons{
+    padding-right: 30px;
+    height: 26px;
+    width: auto;
+    cursor: pointer;
+    padding-bottom: 5px;
+}

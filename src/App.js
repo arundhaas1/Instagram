@@ -2,6 +2,7 @@ import "./App.css";
 import Home from "./Components/Home";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Addposts from './Components/Addposts/Addposts'
+import Chats from './Components/Chats/Chats'
 
 function App() {
   return (
@@ -11,6 +12,10 @@ function App() {
           
           <Route path="/posts">
             <Addposts />
+          </Route>
+
+          <Route path="/chats">
+            <Chats />
           </Route>
 
           <Route path="/">

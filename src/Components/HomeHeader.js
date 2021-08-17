@@ -15,11 +15,13 @@ function HomeHeader() {
         <Link to="/posts">
           <img className="icons" alt="" src="Assets/plus-square-regular.svg" />
         </Link>
-        <img
-          className="icons"
-          alt=""
-          src="Assets/facebook-messenger-brands.svg"
-        />
+        <Link to="/chats">
+          <img
+            className="icons"
+            alt=""
+            src="Assets/facebook-messenger-brands.svg"
+          />
+        </Link>
       </div>
     </div>
   );

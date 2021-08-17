@@ -15,6 +15,7 @@
 .footericon{
     height: 25px;
     width: auto;
+    cursor: pointer;
 }
 
 .profile{

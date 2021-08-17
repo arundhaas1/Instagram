@@ -26,7 +26,7 @@ function Chats() {
             <div className="chats__title">
                 <p className="chatp">Chats</p>
                 <p className="chatp">Rooms</p>
-                <p className="chatsblue">1 Requests</p>
+                <p className="chatsblue">0 Requests</p>
             </div>
 
             <div className="chats__input">

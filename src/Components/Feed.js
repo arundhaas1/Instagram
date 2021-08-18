@@ -25,6 +25,10 @@ function Feed() {
                     <p>hi bros</p>
                 </div>
             </div>
+
+            <div className="time">
+                <p>15 mins ago</p>
+            </div>
         </div>
     )
 }

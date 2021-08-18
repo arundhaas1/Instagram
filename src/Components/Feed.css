@@ -53,9 +53,9 @@
 }
 
 .likes >p{
-    font-weight: 800;
+    font-weight: 600;
     font-size: 14px;
-    color: gray;
+    color: rgb(163, 149, 149);
     margin-top: 3px;
     margin-bottom: 3px;
 }
@@ -73,4 +73,11 @@
     font-size: 15px;
     color: black;
     margin-left: 5px;
+}
+
+.time>p{
+    font-size: 11px;
+    color: rgba(206, 193, 193, 0.877);
+    margin-top: 5px;
+    margin-left: 13px;
 }

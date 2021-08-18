@@ -22,13 +22,15 @@ function App() {
             <Chats />
           </Route>
 
-          <Route path="/login">
-            <Login />
+          <Route path="/homes">
+            <Home />
           </Route>
 
           <Route path="/">
-            <Home />
+            <Login />
           </Route>
+
+          
         </Switch>
       </Router>
     </div>

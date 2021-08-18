@@ -23,9 +23,13 @@
     width: 80vw;
     margin-top: 15px;
     background-color: rgba(233, 227, 227, 0.726);
-    color: rgb(219, 209, 209);
+    /* color: rgb(219, 209, 209); */
     border: none;
     padding: 14px 10px;
+}
+
+.login__data>input:focus{
+    outline-width: 0;
 }
 
 .login__data>button{
@@ -37,6 +41,7 @@
     margin-top: 20px;
     padding: 13px;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
 @media (max-width:768px){
@@ -52,12 +57,14 @@
 
 .login__data>p>span{
     color: rgb(142, 196, 231);
+    cursor: pointer;
 }
 
 .login__google{
     display: flex;
     flex-direction: column;
     align-items: center;
+    cursor: pointer;
 }
 
 .google__log{
@@ -72,4 +79,36 @@
     display: flex;
     justify-content: center;
     /* border: 1px solid green; */
+}
+
+.login__google>p{
+    color: black;
+}
+
+.google__log{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.giticon{
+    margin-right: 10px;
+    color: rgb(0, 46, 77);
+}
+
+.google__log>h5{
+    color: rgb(1, 38, 63);
+}
+
+.login__footer{
+    margin-top: 40px;
+}
+
+.login__footer>p{
+    color: gray;
+}
+
+.login__footer>p>span{
+    color: rgb(142, 196, 231);
+    cursor: pointer;
 }

@@ -54,6 +54,7 @@
 .login__data>p{
     color: gray;
     margin-bottom: 15px;
+    font-size: 12px;
 }
 
 .login__data>p>span{
@@ -107,6 +108,7 @@
 
 .login__footer>p{
     color: gray;
+    font-size: 12px;
 }
 
 .login__footer>p>span{

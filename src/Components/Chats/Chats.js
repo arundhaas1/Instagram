@@ -7,8 +7,11 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import SearchIcon from "@material-ui/icons/Search";
 import CameraAltIcon from "@material-ui/icons/CameraAlt";
 import { Link } from "react-router-dom";
+import { useDataLayerValue } from "../datalayer";
 
 function Chats() {
+  const [{ user }, dispatch] = useDataLayerValue();
+
   return (
     <div className="chats">
       <div className="chatsheader">
@@ -16,7 +19,7 @@ function Chats() {
           <ArrowBackIcon style={{ color: "black" }} fontSize="large" />
         </Link>
         <div className="xtra">
-          <p>Arun_dhaas1</p>
+          {!user ? <p>Arun_dhaas1</p> : <p>{user.displayName}</p>}
           <ExpandMoreIcon />
         </div>
         <VideocamIcon className="vicon" fontSize="large" />
@@ -35,10 +38,11 @@ function Chats() {
       </div>
 
       <div className="chats__data">
-        <img
-          alt=""
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvrwnDbtNcrI-dGYTymzFiIqCWWlLKxHpEew&usqp=CAU"
-        />
+        {!user ? (
+          <img alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvrwnDbtNcrI-dGYTymzFiIqCWWlLKxHpEew&usqp=CAU" />
+        ) : (
+          <img alt="" src={user?.photoURL} />
+        )}
         <Link to="/chat">
           <div className="chat">
             <p className="chathead">Arun_dhaas1</p>

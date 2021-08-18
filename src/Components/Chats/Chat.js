@@ -6,8 +6,14 @@ import VideocamIcon from "@material-ui/icons/Videocam";
 import "./Chat.css";
 import CameraAltIcon from '@material-ui/icons/CameraAlt';
 import SendIcon from '@material-ui/icons/Send';
+import { useDataLayerValue } from "../datalayer";
+
 
 function Chat() {
+
+  const [{ user }, dispatch] = useDataLayerValue();
+
+
   return (
     <div className="chat">
       <div className="chatheader">
@@ -15,10 +21,11 @@ function Chat() {
           <ArrowBackIcon style={{ color: "black" }} fontSize="large" />
         </Link>
         <div className="extra">
-          <img
-            alt=""
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvrwnDbtNcrI-dGYTymzFiIqCWWlLKxHpEew&usqp=CAU"
-          />
+        {!user ? (
+          <img alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvrwnDbtNcrI-dGYTymzFiIqCWWlLKxHpEew&usqp=CAU" />
+        ) : (
+          <img alt="" src={user?.photoURL} />
+        )}
           <p>Arun_dhaas1</p>
         </div>
 

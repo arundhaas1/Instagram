@@ -1,0 +1,90 @@
+.chatheader {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  position: sticky;
+  top: 0;
+}
+
+.extra {
+  display: flex;
+  align-items: center;
+}
+
+.extra > img {
+  height: 40px;
+  width: 40px;
+  margin-left: 10px;
+  border-radius: 50%;
+}
+
+.extra > p {
+  margin-left: 20px;
+  font-weight: 600;
+}
+
+.pvicon {
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.picon {
+  margin-right: 10px;
+}
+
+.chat__footer {
+  display: flex;
+  /* height: 100vh; */
+  align-items: flex-end;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  position: fixed;
+}
+
+.ds {
+  display: flex;
+  align-items: center;
+  background-color: rgb(219, 208, 208);
+  border-radius: 999px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px 5px;
+  margin-bottom: 5px;
+}
+
+.ds > input {
+  width: 88vw;
+  padding: 5px;
+  border: none;
+  background-color: rgb(219, 208, 208);
+}
+
+@media (max-width: 768px) {
+  .ds > input {
+    width: 77vw;
+  }
+}
+
+.ds > input:focus {
+  outline-width: 0;
+}
+
+.chat__end {
+  display: flex;
+  align-items: center;
+}
+
+.sendicon {
+  margin-left: 5px;
+  color: rgb(66, 117, 194);
+}
+
+.cameraicon{
+    background-color: rgb(66, 117, 194);
+    border-radius: 50%;
+    padding: 5px;
+    color: #fff;
+}

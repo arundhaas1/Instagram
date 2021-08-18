@@ -4,8 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Addposts from './Components/Addposts/Addposts'
 import Chats from './Components/Chats/Chats'
 import Login from './Components/Login/Login'
-import { useEffect } from "react";
-import { auth } from "./Components/Firebase";
+import Chat from './Components/Chats/Chat'
 
 function App() {
 
@@ -24,6 +23,10 @@ function App() {
 
           <Route path="/homes">
             <Home />
+          </Route>
+
+          <Route path="/chat">
+            <Chat />
           </Route>
 
           <Route path="/">

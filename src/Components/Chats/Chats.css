@@ -72,6 +72,7 @@
 .chats__data{
     display: flex;
     width: 90vw;
+    align-items: center;
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;

@@ -65,6 +65,8 @@ function Login() {
             <p>
               Don't have an account? <span onClick={agreeIt}>Sign In</span>
             </p>
+
+            <p className="credit">© Arun Dhas</p>
           </div>
         </div>
       )}

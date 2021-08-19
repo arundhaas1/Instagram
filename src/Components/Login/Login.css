@@ -5,9 +5,12 @@
 .login__header{
     margin-top: 10px;
     display: flex;
+    text-align: center;
+    flex-direction: column;
     justify-content: center;
     color: rgb(173, 168, 168);
 }
+
 
 .login__data{
     margin-top: 200px;
@@ -114,4 +117,9 @@
 .login__footer>p>span{
     color: rgb(142, 196, 231);
     cursor: pointer;
+}
+
+.credit{
+    cursor: pointer;
+    margin-left: 10px;
 }

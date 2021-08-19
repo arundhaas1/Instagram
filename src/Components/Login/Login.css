@@ -5,8 +5,6 @@
 .login__header{
     margin-top: 10px;
     display: flex;
-    text-align: center;
-    flex-direction: column;
     justify-content: center;
     color: rgb(173, 168, 168);
 }

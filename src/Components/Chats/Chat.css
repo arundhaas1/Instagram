@@ -1,5 +1,6 @@
 .chatheader {
   margin-top: 10px;
+  margin-left: -10px;
   display: flex;
   align-items: center;
   width: 100%;

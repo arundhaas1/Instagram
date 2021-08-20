@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import ArrowBackIcon from "@material-ui/icons/ArrowBack";
 import { Link } from "react-router-dom";
 import PhoneIcon from "@material-ui/icons/Phone";
@@ -16,15 +16,20 @@ function Chat() {
   const [input, setInput] = useState("");
   const [messages, setMessages] = useState([]);
 
-  useEffect (()=>{
-    db.collection('Instagram').orderBy('timestamp','desc').onSnapshot(snapshot=>{
-        setMessages(snapshot.docs.map(doc=>({id :doc.id ,message :doc.data()})))
-    })
-},[])
+  useEffect(() => {
+    db.collection("Instagram")
+      .orderBy("timestamp", "desc")
+      .onSnapshot((snapshot) => {
+        setMessages(
+          snapshot.docs.map((doc) => ({ id: doc.id, message: doc.data() }))
+        );
+      });
+  }, []);
 
   const sendIt = (e) => {
-    // e.preventDefault();
+    e.preventDefault();
     db.collection("Instagram").add({
+      image: user.photoURL,
       message: input,
       username: user.displayName,
       timestamp: firebase.firestore.FieldValue.serverTimestamp(),
@@ -32,13 +37,8 @@ function Chat() {
     setInput("");
   };
 
-  const onEnter = (e) => {
-    if (e.keyCode === 13) {
-      sendIt();
-    }
-  };
-
-  console.log("i am",input)
+  // console.log("input is", input)
+  // console.log("message is",messages)
 
   return (
     <div className="chat">
@@ -64,28 +64,25 @@ function Chat() {
         </div>
       </div>
 
-      <div className="messages">
-        <div>
-          {messages.map((text) => {
-            console.log("text is", text);
-            const isUser = text.message.username === user?.displayName;
-            return (
-              // console.log('name2 is' ,text.message.username ),
-              <div className="message">
-                {text ? (
-                  <Card className={!isUser ? "text" : "guest"}>
-                    <CardContent>
-                      <Typography>
-                        <p className="text__mess1">{text.message?.username}</p>
-                        <p className="text__mess2">{text.message.message}</p>
-                      </Typography>
-                    </CardContent>
-                  </Card>
-                ) : null}
+      <div>
+        {messages.map((text) => {
+          console.log("text is", text);
+          const isUser = text.message.username === user?.displayName;
+          return (
+            // console.log('name2 is' ,text.message.username ),
+            <div className="message">
+              <div className={!isUser ? "tex" : "gues"}>
+                <img alt="" src={text?.message.image} />
               </div>
-            );
-          })}
-        </div>
+              {text ? (
+                <div className={!isUser ? "text" : "guest"}>
+                    <h5 className="text__mess1">{text.message?.username}</h5>
+                    <p className="text__mess2">{text.message.message}</p>
+                </div>
+              ) : null}
+            </div>
+          );
+        })}
       </div>
 
       <div className="chat__footer">
@@ -93,7 +90,6 @@ function Chat() {
           <CameraAltIcon fontSize="large" className="cameraicon" />
           <input
             onChange={(e) => setInput(e.target.value)}
-            onKeyDown={onEnter}
             value={input}
             type="text"
             placeholder="Message..."

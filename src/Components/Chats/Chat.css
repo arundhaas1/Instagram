@@ -90,3 +90,50 @@
     padding: 5px;
     color: #fff;
 }
+
+.text, .guest{
+  background-color: rgba(231, 231, 231, 0.39);
+  margin-top: 10px;
+  width: fit-content;
+  padding: 8px;
+  border-radius: 13px;
+}
+
+.text__mess1{
+  /* color: rgba(78, 77, 77, 0.788); */
+  font-size: 9px;
+  font-weight: lighter;
+}
+
+.text{
+  color: black;
+}
+
+.guest{
+  margin-left: auto;
+  margin-right: 10px;
+  background-color: rgba(196, 105, 223, 0.774);
+  color: rgb(255, 255, 255);
+}
+
+.message{
+  display: flex;
+  gap: 10px;
+
+}
+
+.guest >h5{
+  display: none;
+}
+
+.gues>img , .tex>img{
+  height: 23px;
+  width: 23px;
+  border: 1px solid green;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+.gues > img{
+  display: none;
+}

@@ -17,6 +17,7 @@
 .checkicon{
     color: blue;
     margin-left: auto;
+    cursor: pointer;
 }
 
 .addpostsdata{

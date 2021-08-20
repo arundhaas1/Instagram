@@ -1,5 +1,6 @@
 .feed{
-    margin-top: 10px;
+    margin-top: 15px;
+    /* border: 1px solid red; */
 }
 
 .feedheader{
@@ -31,9 +32,9 @@
 }
 
 .feedpost >img{
-    width: 100vw;
-    height: auto;
-    object-fit: cover;
+    height: 300px;
+    width: auto;
+    object-fit: contain;
 }
 
 .feedfooter{
@@ -62,15 +63,17 @@
 
 .comment{
     display: flex;
+    margin-top: 7px;
+    align-items: center;
 }
 
 .comment>h5{
-    font-size: 15px;
+    font-size: 12px;
     color: black;
 }
 
 .comment>p{
-    font-size: 15px;
+    font-size: 12px;
     color: black;
     margin-left: 5px;
 }

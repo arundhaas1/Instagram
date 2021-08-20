@@ -38,14 +38,10 @@ function Chats() {
       </div>
       <Link to="/chat">
         <div className="chats__data">
-          {!user ? (
             <img
               alt=""
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvrwnDbtNcrI-dGYTymzFiIqCWWlLKxHpEew&usqp=CAU"
             />
-          ) : (
-            <img alt="" src={user?.photoURL} />
-          )}
           <div className="chat">
             <p className="chathead">Arun_dhaas1</p>
             <p className="chatgray">Click Here</p>

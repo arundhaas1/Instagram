@@ -47,14 +47,10 @@ function Chat() {
           <ArrowBackIcon style={{ color: "black" }} fontSize="large" />
         </Link>
         <div className="extra">
-          {!user ? (
             <img
               alt=""
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvrwnDbtNcrI-dGYTymzFiIqCWWlLKxHpEew&usqp=CAU"
             />
-          ) : (
-            <img alt="" src={user?.photoURL} />
-          )}
           <p>Arun_dhaas1</p>
         </div>
 

@@ -6,8 +6,6 @@ function Feeds() {
     return (
         <div className="feeds">
             <Feed />
-            <Feed />
-            <Feed />
         </div>
     )
 }

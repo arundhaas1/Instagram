@@ -3,37 +3,54 @@ import "./Addposts.css";
 import ArrowBackIcon from "@material-ui/icons/ArrowBack";
 import CheckIcon from "@material-ui/icons/Check";
 import { Link } from "react-router-dom";
-import db from "../Firebase.js";
 import { useDataLayerValue } from "../datalayer";
 import firebase from "firebase";
+import { useHistory } from "react-router";
+import db from "../Firebase";
 
 function Addposts() {
+
+  const history=useHistory()
+
   const [input, setInput] = useState("");
-  const [posts, setPosts] = useState("");
   const [{ user }, dispatch] = useDataLayerValue();
+  const [attachment, setAttachment] = useState("");
 
-  console.log("in", input)
+  const toBase64 = (file) =>
+    new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.readAsDataURL(file);
+      reader.onload = () => resolve(reader.result);
+      reader.onerror = (error) => reject(error);
+    });
 
-  // useEffect(() => {
-  //   db.collection("InstagramPosts")
-  //     .orderBy("timestamp", "desc")
-  //     .onSnapshot((snapshot) => {
-  //       setPosts(
-  //         snapshot.docs.map((doc) => ({ id: doc.id, message: doc.data() }))
-  //       );
-  //     });
-  // }, []);
+  const onFileChange = async () => {
+    var fileInput = document.querySelector("#input");
+    if (fileInput) {
+      var file = fileInput.files[0];
+      const base64String = await toBase64(file);
+      setAttachment(base64String);
+    }
+  };
+
+  // console.log("attachment is", attachment);
+
+  const moveIt=()=>{
+    history.push("/homes")
+  }
+
 
   const postIt = (e) => {
     e.preventDefault();
     db.collection("InstagramPosts").add({
+      post: attachment,
       caption: input,
       username: user.displayName,
       image: user.photoURL,
       timestamp: firebase.firestore.FieldValue.serverTimestamp(),
     });
 
-    setInput("")
+    setInput("");
   };
   return (
     <div className="addposts">
@@ -42,7 +59,9 @@ function Addposts() {
           <ArrowBackIcon style={{ color: "black" }} fontSize="large" />
         </Link>
         <h2>New Post</h2>
-        <CheckIcon onClick={postIt} className="checkicon" fontSize="large" />
+        <div  className="hede">
+          <CheckIcon onClick={postIt} className="checkicon" fontSize="large" />
+        </div>
       </div>
 
       <div className="addpostsdata">
@@ -58,6 +77,7 @@ function Addposts() {
         <label className="addimage">
           <i className=" ">Add images +</i>
           <input
+            onChange={onFileChange}
             id="input"
             style={{ display: "none" }}
             type="file"

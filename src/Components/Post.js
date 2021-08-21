@@ -4,7 +4,7 @@ import MoreVertIcon from "@material-ui/icons/MoreVert";
 export default function Post({ post, index }) {
   const [like, setLike] = useState(false);
   const [num, setNum] = useState(0);
-  const changeHeart = (id, index) => {
+  const changeHeart = () => {
     setLike(!like);
     setNum(num - 1);
   };
@@ -26,7 +26,7 @@ export default function Post({ post, index }) {
       <div className="feedfooter">
         {like ? (
           <img
-            onClick={() => changeHeart(post.id, index)}
+            onClick={() => changeHeart()}
             className="feedicon"
             style={{ cursor: "pointer" }}
             alt=""
@@ -35,7 +35,7 @@ export default function Post({ post, index }) {
         ) : (
           <img
             style={{ cursor: "pointer" }}
-            onClick={() => changeRedHeart(post.id, index)}
+            onClick={() => changeRedHeart()}
             className="feedicon"
             alt=""
             src="Assets/heart-regular.svg"

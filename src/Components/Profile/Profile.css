@@ -44,7 +44,7 @@
 }
 
 .logout{
-    margin-left: 30px;
+    margin-left: 20px;
 }
 
 .name{
@@ -57,6 +57,7 @@
     font-size: 15px;
     /* font-weight: 500; */
     margin-bottom: 20px;
+    width: 50vw;
 }
 
 .logout >button{

@@ -36,7 +36,6 @@ function Addposts() {
   // console.log("attachment is", attachment);
 
   const moveIt=()=>{
-    history.push("/homes")
   }
 
 
@@ -49,7 +48,7 @@ function Addposts() {
       image: user.photoURL,
       timestamp: firebase.firestore.FieldValue.serverTimestamp(),
     });
-
+    history.push("/homes")
     setInput("");
   };
   return (
@@ -67,7 +66,7 @@ function Addposts() {
       <div className="addpostsdata">
         <img
           alt=""
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvrwnDbtNcrI-dGYTymzFiIqCWWlLKxHpEew&usqp=CAU"
+          src={user.photoURL}
         />
         <input
           onChange={(e) => setInput(e.target.value)}
@@ -75,7 +74,7 @@ function Addposts() {
           placeholder="Write a caption.."
         ></input>
         <label className="addimage">
-          <i className=" ">Add images +</i>
+          <i className=" ">{attachment ? "Image Added" :"Add images+"}</i>
           <input
             onChange={onFileChange}
             id="input"

@@ -40,7 +40,7 @@ function Chats() {
         <div className="chats__data">
             <img
               alt=""
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvrwnDbtNcrI-dGYTymzFiIqCWWlLKxHpEew&usqp=CAU"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuhO9a_BfEPT5RNEunoAkxFFKZbnMWopS52g&usqp=CAU"
             />
           <div className="chat">
             <p className="chathead">Arun_dhaas1</p>

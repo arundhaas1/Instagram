@@ -11,8 +11,8 @@ function Story() {
     return (
         <div className="story">
             {user ? (<Storydata image={user?.photoURL}/>) : null}
-            <Storydata image={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvrwnDbtNcrI-dGYTymzFiIqCWWlLKxHpEew&usqp=CAU"}/>
-            <Storydata image={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvrwnDbtNcrI-dGYTymzFiIqCWWlLKxHpEew&usqp=CAU"} />
+            <Storydata image={"https://www.whatsappimages.in/wp-content/uploads/2021/03/Alone-Boys-Girls-Whatsapp-DP-Images-wallpaper-download.jpg"}/>
+            <Storydata image={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuhO9a_BfEPT5RNEunoAkxFFKZbnMWopS52g&usqp=CAU"} />
         </div>
     )
 }

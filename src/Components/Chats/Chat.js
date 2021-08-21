@@ -3,13 +3,13 @@ import ArrowBackIcon from "@material-ui/icons/ArrowBack";
 import { Link } from "react-router-dom";
 import PhoneIcon from "@material-ui/icons/Phone";
 import VideocamIcon from "@material-ui/icons/Videocam";
-import { CardContent, Card, Typography } from "@material-ui/core";
 import "./Chat.css";
 import CameraAltIcon from "@material-ui/icons/CameraAlt";
 import SendIcon from "@material-ui/icons/Send";
 import { useDataLayerValue } from "../datalayer";
 import firebase from "firebase";
 import db from "../Firebase.js";
+import { IconButton } from '@material-ui/core';
 
 function Chat() {
   const [{ user }, dispatch] = useDataLayerValue();
@@ -47,10 +47,10 @@ function Chat() {
           <ArrowBackIcon style={{ color: "black" }} fontSize="large" />
         </Link>
         <div className="extra">
-            <img
-              alt=""
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvrwnDbtNcrI-dGYTymzFiIqCWWlLKxHpEew&usqp=CAU"
-            />
+          <img
+            alt=""
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuhO9a_BfEPT5RNEunoAkxFFKZbnMWopS52g&usqp=CAU"
+          />
           <p>Arun_dhaas1</p>
         </div>
 
@@ -72,8 +72,8 @@ function Chat() {
               </div>
               {text ? (
                 <div className={!isUser ? "text" : "guest"}>
-                    <h5 className="text__mess1">{text.message?.username}</h5>
-                    <p className="text__mess2">{text.message.message}</p>
+                  <h5 className="text__mess1">{text.message?.username}</h5>
+                  <p className="text__mess2">{text.message.message}</p>
                 </div>
               ) : null}
             </div>
@@ -91,7 +91,13 @@ function Chat() {
             placeholder="Message..."
           ></input>
           <div className="chat__end">
-            <SendIcon onClick={sendIt} fontSize="large" className="sendicon" />
+            <IconButton className="buttons" disabled={!input}>
+              <SendIcon
+                onClick={sendIt}
+                fontSize="large"
+                className="sendicon"
+              />
+            </IconButton>
           </div>
         </div>
       </div>

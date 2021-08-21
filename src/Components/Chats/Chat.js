@@ -33,6 +33,7 @@ function Chat() {
       message: input,
       username: user.displayName,
       timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+      liked:false
     });
     setInput("");
   };

@@ -1,0 +1,47 @@
+.activity{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.activity__header{
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(197, 196, 196, 0.521);
+}
+
+.activity__header >h4{
+    font-size: 25px;
+    color: rgb(39, 39, 39);
+}
+
+.activity__header>p{
+    font-size: 19px;
+    margin-top: 5px;
+    color: rgb(54, 54, 54);
+}
+
+.activity__data{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.activity__data>img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.spann{
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.849);
+}
+
+.activity__data>p{
+    margin-left: 15px;
+    color: gray;
+}
+
+.fss{
+    bottom: 0;
+    position: sticky;
+}

@@ -5,12 +5,16 @@ import Addposts from './Components/Addposts/Addposts'
 import Chats from './Components/Chats/Chats'
 import Login from './Components/Login/Login'
 import Chat from './Components/Chats/Chat'
+import Search from './Components/Search/Search'
+import Activity from './Components/Activity/Activity'
+import ScrollToTop from "./Components/ScrollToTop";
 
 function App() {
 
   return (
     <div className="app">
       <Router>
+        <ScrollToTop />
         <Switch>
           
           <Route path="/posts">
@@ -25,8 +29,16 @@ function App() {
             <Home />
           </Route>
 
+          <Route path="/search">
+            <Search />
+          </Route>
+
           <Route path="/chat">
             <Chat />
+          </Route>
+
+          <Route path="/activity">
+            <Activity />
           </Route>
 
           <Route path="/">

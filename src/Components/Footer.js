@@ -20,13 +20,13 @@ function Footer() {
       </Link>
       {!user ? (
         <img
-          className="footericon profile"
+          className="footericon iss"
           alt=""
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvrwnDbtNcrI-dGYTymzFiIqCWWlLKxHpEew&usqp=CAU"
         />
       ) : (
         <Link to="/profile">
-          <img className="footericon profile" alt="" src={user?.photoURL} />
+          <img className="footericon iss" alt="" src={user?.photoURL} />
         </Link>
       )}
     </div>

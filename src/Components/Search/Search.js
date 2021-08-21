@@ -2,7 +2,6 @@ import React from 'react'
 import './Search.css'
 import SearchIcon from '@material-ui/icons/Search';
 import { useHistory } from 'react-router';
-import Footer from '../Footer';
 
 function Search() {
 

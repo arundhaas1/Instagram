@@ -10,8 +10,10 @@ import Activity from "./Components/Activity/Activity";
 import ScrollToTop from "./Components/ScrollToTop";
 import Profile from './Components/Profile/Profile'
 import Footer from './Components/Footer'
+import { auth } from "./Components/Firebase";
 
 function App() {
+
   return (
     <div className="app">
       <Router>
@@ -36,6 +38,7 @@ function App() {
 
           <Route path="/profile">
             <Profile />
+            <Footer />
           </Route>
 
           <Route path="/chat">

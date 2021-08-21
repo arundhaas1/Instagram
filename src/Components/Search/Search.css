@@ -41,6 +41,10 @@
     overflow-x: scroll;
 }
 
+.search__feed::-webkit-scrollbar{
+    display: none;
+}
+
 .search__data{
     border: 1px solid rgb(196, 194, 194);
     padding: 7px 10px;

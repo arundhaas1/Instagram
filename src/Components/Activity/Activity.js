@@ -34,9 +34,6 @@ function Activity() {
                     )
                 })}
             </div>
-                <div className="fss">
-                <Footer />
-                </div>
 
         </div>
     )

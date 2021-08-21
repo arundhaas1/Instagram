@@ -9,6 +9,7 @@ import Search from "./Components/Search/Search";
 import Activity from "./Components/Activity/Activity";
 import ScrollToTop from "./Components/ScrollToTop";
 import Profile from './Components/Profile/Profile'
+import Footer from './Components/Footer'
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
 
           <Route path="/search">
             <Search />
+            <Footer />
           </Route>
 
           <Route path="/profile">
@@ -42,6 +44,7 @@ function App() {
 
           <Route path="/activity">
             <Activity />
+            <Footer />
           </Route>
 
           <Route path="/">

@@ -33,7 +33,6 @@ function Search() {
                 <button onClick={toHome}>Go Back</button>
             </div>
             <div className="shas"></div>
-            <Footer />
         </div>
     )
 }

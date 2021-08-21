@@ -37,6 +37,8 @@
     justify-content: space-between;
     margin-left: 15px;
     margin-right: 15px;
+    overflow-y: hidden;
+    overflow-x: scroll;
 }
 
 .search__data{
@@ -65,7 +67,7 @@
 }
 
 .shas{
-    height: 50vh;
+    height: 60vh;
 }
 
 .explore>button{

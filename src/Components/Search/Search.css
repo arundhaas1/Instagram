@@ -39,6 +39,7 @@
     margin-right: 15px;
     overflow-y: hidden;
     overflow-x: scroll;
+    gap: 10px;
 }
 
 .search__feed::-webkit-scrollbar{

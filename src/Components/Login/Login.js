@@ -45,7 +45,7 @@ function Login() {
                 placeholder="Phone number,email or username"
               ></input>
               <input type="password" placeholder="Password"></input>
-              <button onClick={agreeIt}>Log In</button>
+              <button className="bus" onClick={agreeIt}>Log In</button>
               <p>
                 Forget your login details?{" "}
                 <span onClick={agreeIt}>Get help logging in</span>

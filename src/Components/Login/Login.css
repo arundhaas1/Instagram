@@ -35,7 +35,7 @@
 }
 
 .login__data>button{
-    width: 81%;
+    width: 81vw;
     margin-top: 15px;
     background-color: rgb(142, 196, 231);
     color: rgb(255, 255, 255);

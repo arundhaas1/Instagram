@@ -127,9 +127,9 @@
 }
 
 .gues>img , .tex>img{
-  height: 23px;
-  width: 23px;
-  border: 1px solid green;
+  height: 24px;
+  width: 24px;
+  /* border: 1px solid green; */
   border-radius: 50%;
   margin-top: 10px;
 }

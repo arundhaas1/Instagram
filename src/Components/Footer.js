@@ -9,7 +9,7 @@ function Footer() {
   return (
     <div className="footer">
       <Link to="/homes">
-      <img className="footericon" alt="" src="Assets/home-solid.svg" />
+        <img className="footericon" alt="" src="Assets/home-solid.svg" />
       </Link>
       <Link to="/search">
         <img className="footericon" alt="" src="Assets/search-solid.svg" />
@@ -25,7 +25,9 @@ function Footer() {
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvrwnDbtNcrI-dGYTymzFiIqCWWlLKxHpEew&usqp=CAU"
         />
       ) : (
-        <img className="footericon profile" alt="" src={user?.photoURL} />
+        <Link to="/profile">
+          <img className="footericon profile" alt="" src={user?.photoURL} />
+        </Link>
       )}
     </div>
   );

@@ -11,6 +11,7 @@ import ScrollToTop from "./Components/ScrollToTop";
 import Profile from "./Components/Profile/Profile";
 import Footer from "./Components/Footer";
 import Reels from "./Components/Reels/Reels";
+import { useEffect, useState } from "react";
 
 function App() {
   return (

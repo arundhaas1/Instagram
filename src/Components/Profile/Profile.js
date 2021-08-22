@@ -14,6 +14,10 @@ function Profile() {
     history.push("/homes");
   };
 
+  const addPost=()=>{
+    history.push("/posts");
+  }
+
   console.log("usersss is ",user)
 
   return (
@@ -24,7 +28,7 @@ function Profile() {
           <ExpandMoreIcon />
         </div>
         <div className="header__right">
-          <img alt="" src="Assets/plus-square-regular (1).svg" />
+          <img onClick={addPost} alt="" src="Assets/plus-square-regular (1).svg" />
           <img alt="" src="Assets/bars-solid.svg" />
         </div>
       </div>

@@ -14,7 +14,9 @@ function Footer() {
       <Link to="/search">
         <img className="footericon" alt="" src="Assets/search-solid.svg" />
       </Link>
-      <img className="footericon" alt="" src="Assets/youtube-brands.svg" />
+      <Link to="/reels">
+        <img className="footericon" alt="" src="Assets/youtube-brands.svg" />
+      </Link>
       <Link to="/activity">
         <img className="footericon" alt="" src="Assets/heart-regular.svg" />
       </Link>

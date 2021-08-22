@@ -10,7 +10,7 @@ import Activity from "./Components/Activity/Activity";
 import ScrollToTop from "./Components/ScrollToTop";
 import Profile from './Components/Profile/Profile'
 import Footer from './Components/Footer'
-import { auth } from "./Components/Firebase";
+import Reels from "./Components/Reels/Reels";
 
 function App() {
 
@@ -39,6 +39,10 @@ function App() {
           <Route path="/profile">
             <Profile />
             <Footer />
+          </Route>
+
+          <Route path="/reels">
+            <Reels />
           </Route>
 
           <Route path="/chat">

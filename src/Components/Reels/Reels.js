@@ -39,7 +39,7 @@ function Reels() {
             </div>
           </div>
           <div className="profile__caption">
-            <p>Digital design is like painting, except the paint never dries ...</p>
+            <p>Digital design is like Painting, except the paint never dries ...</p>
           </div>
 
           <div className="profile__foot">

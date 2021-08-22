@@ -8,12 +8,11 @@ import Chat from "./Components/Chats/Chat";
 import Search from "./Components/Search/Search";
 import Activity from "./Components/Activity/Activity";
 import ScrollToTop from "./Components/ScrollToTop";
-import Profile from './Components/Profile/Profile'
-import Footer from './Components/Footer'
+import Profile from "./Components/Profile/Profile";
+import Footer from "./Components/Footer";
 import Reels from "./Components/Reels/Reels";
 
 function App() {
-
   return (
     <div className="app">
       <Router>

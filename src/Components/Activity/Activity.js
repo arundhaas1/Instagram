@@ -1,7 +1,6 @@
 import React,{useEffect, useState} from 'react'
 import './Activity.css'
 import db from '../Firebase';
-import Footer from '../Footer';
 
 function Activity() {
 

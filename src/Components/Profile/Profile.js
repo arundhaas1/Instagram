@@ -11,7 +11,7 @@ function Profile() {
   const [{ user }, dispatch] = useDataLayerValue();
 
   const toLogs = () => {
-    history.push("/profile");
+    history.push("/homes");
   };
 
   const addPost=()=>{

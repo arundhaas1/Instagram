@@ -3,7 +3,7 @@ import MoreVertIcon from "@material-ui/icons/MoreVert";
 
 export default function Post({ post, index }) {
   const [like, setLike] = useState(false);
-  const [num, setNum] = useState(0);
+  const [num, setNum] = useState(1035);
   const changeHeart = () => {
     setLike(!like);
     setNum(num - 1);
